@@ -1,24 +1,25 @@
 <template>
   <div id="app">
-    <!-- <Header />でHeader.vueを表示 -->
     <Header />
 
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-
+    <div class="container">
+      <img alt="Vue logo" src="./assets/logo.png">
+      <Top />
+    </div>
+    
     <Footer />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Top from './components/Top.vue'
 import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    Top,
     Header,
     Footer,
   }

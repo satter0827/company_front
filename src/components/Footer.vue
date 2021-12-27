@@ -6,6 +6,6 @@
       <b-nav-item>Another Link</b-nav-item>
       <b-nav-item disabled>Disabled</b-nav-item>
     </b-nav>
-    <p>Copyright 2021 sample.</p>
+    <p align="center">Copyright 2021 sample.</p>
   </footer>
 </template>

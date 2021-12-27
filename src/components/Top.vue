@@ -3,12 +3,19 @@
     <div class="alert alert-info">
       <p>企業名で検索</p>
       <input class= "form-control" type="text" v-model="searchword">  
-
-      <div class="center-block" v-for="company in companies" v-bind:key="company.company_id">
-        <td><a v-bind:href="company.url">{{ company.name }}</a></td>
-      </div>
-
     </div>
+
+    <v-card class="mt-4 mb-4 pa-3">
+      <v-layout row wrap>
+        <v-flex xs4 v-for="company in companies" v-bind:key="company.company_id">
+          <v-card class="grey lighten-3 ma-2">
+            <v-card-text><a v-bind:href="company.url">{{ company.name }}</a></v-card-text>
+            <v-card-text>{{ company.business_information }}</v-card-text>
+            <link-prevue v-bind:href="company.url"></link-prevue>
+          </v-card>
+        </v-flex>
+      </v-layout>
+    </v-card>
   </div>
 </template>
 

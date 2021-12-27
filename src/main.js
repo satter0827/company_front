@@ -4,7 +4,11 @@ import BootstrapVue from 'bootstrap-vue' // add
 import 'bootstrap/dist/css/bootstrap.css' // add
 import 'bootstrap-vue/dist/bootstrap-vue.css' // add
 
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+
 Vue.use(BootstrapVue) // add
+Vue.use(VueAxios, axios) // add
 Vue.config.productionTip = false
 
 new Vue({
